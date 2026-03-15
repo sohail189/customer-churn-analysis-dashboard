@@ -1,102 +1,231 @@
-📊 Customer Churn Analysis Dashboard
+# 📊 Customer Churn Analysis Dashboard
 
-🚀 Project Overview
+<div align="center">
 
-This project presents a Customer Churn Analysis Dashboard built in Power BI to analyze customer behavior and identify key factors contributing to churn.
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Business Intelligence](https://img.shields.io/badge/Business_Intelligence-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-The dashboard delivers clear, actionable business insights to help organizations improve customer retention strategies and reduce churn rates.
+**An interactive Power BI dashboard that analyzes customer churn patterns and delivers actionable retention insights.**
 
-🎯 Objective
+[📸 View Screenshot](#-dashboard-preview) · [📁 Dataset](#-dataset) · [🔍 Key Insights](#-key-insights) · [🐛 Report Issue](https://github.com/sohail189/customer-churn-analysis-dashboard/issues)
 
-Analyze customer churn patterns
+</div>
 
-Identify high-risk customer segments
+---
 
-Evaluate impact of contract type, tenure, and monthly charges
+## 📝 Description
 
-Provide data-driven recommendations
+The **Customer Churn Analysis Dashboard** is a business intelligence solution built with **Power BI** that helps organizations understand *why* customers leave and *which* customer segments are most at risk.
 
-📌 Key Metrics
-Metric	Value
-👥 Total Customers	1869
-📉 Churn Rate	1.00
-📆 Average Tenure	17.98
-💰 Monthly Charges	910
-💳 Total Charges	1732
-📈 Dashboard Features
-1️⃣ Churn Rate by Contract Type
+By visualizing churn patterns across contract types, tenure, and monthly charges, this dashboard empowers business teams to make **data-driven retention decisions** — reducing revenue loss and improving customer lifetime value.
 
-Month-to-Month
+> 💡 **Business Problem:** Companies lose significant revenue when customers cancel subscriptions or stop purchasing. Identifying at-risk customers *before* they churn is critical to staying competitive.
 
-One Year
+---
 
-Two Year
+## ✨ Features
 
-Identifies which contract category has the highest churn risk.
+- 📉 **Churn Rate Analysis** — Visual breakdown of overall churn rate with trend indicators
+- 📋 **Contract Type Segmentation** — Churn comparison across Month-to-Month, One Year, and Two Year contracts
+- 👥 **Customer Activity Summary** — KPI cards showing Total, Active, Churned, and Monthly Churn figures
+- 📊 **Churn Distribution Chart** — Clear visual split between active and churned customers
+- 💰 **Revenue Impact Analysis** — Impact of monthly and total charges on churn behavior
+- 📆 **Tenure-Based Insights** — How customer age (tenure) affects their likelihood to churn
+- 🎯 **Interactive Filters** — Slice data by contract type, tenure range, and charge brackets
+- 💼 **Actionable Recommendations** — Built-in insights to guide retention strategy
 
-2️⃣ Churn Distribution Analysis
+---
 
-Clear visual comparison between:
+## 📌 Key Metrics
 
-Active Customers
+| Metric | Value |
+|---|---|
+| 👥 Total Customers | **1,869** |
+| 📉 Churn Rate | **26.5%** |
+| 📆 Average Tenure | **17.98 months** |
+| 💰 Avg Monthly Charges | **$64.76** |
+| 💳 Avg Total Charges | **$2,283** |
+| 🔴 Churned Customers | **~495** |
+| 🟢 Active Customers | **~1,374** |
 
-Churned Customers
+---
 
-3️⃣ Customer Activity Summary
+## 🔍 Key Insights
 
-Quick KPI comparison of:
+### 1️⃣ Contract Type is the Strongest Predictor
+> Month-to-month customers churn at dramatically higher rates than one-year or two-year contract holders. Short-term flexibility comes at a retention cost.
 
-Total Customers
+### 2️⃣ Tenure Matters — Early Months are Critical
+> Customers with **less than 12 months** of tenure show the highest churn rates. The first year of the customer relationship is the highest-risk period.
 
-Monthly Churn
+### 3️⃣ Higher Monthly Charges Drive Churn
+> Customers paying above-average monthly charges — especially newer customers — are significantly more likely to churn. Pricing perception is a key driver.
 
-Churn Customers
+### 4️⃣ Long-Term Contracts = Strong Retention
+> Two-year contract holders have near-zero churn. Incentivizing customers to commit long-term is the most effective retention strategy.
 
-Active Customers
+---
 
-🔍 Key Insights
+## 🛠️ Tools & Technologies
 
-✔️ Churn is highest among month-to-month contract users, showing short-term customers are more likely to leave.
+| Tool | Purpose |
+|---|---|
+| **Power BI Desktop** | Dashboard creation, DAX measures, interactive visuals |
+| **Microsoft Excel** | Data source, initial data cleaning |
+| **DAX (Data Analysis Expressions)** | Custom KPI calculations and measures |
+| **Power Query** | Data transformation and shaping |
 
-✔️ Customers with lower tenure exhibit higher churn rates, emphasizing the importance of early engagement.
+---
 
-✔️ Higher monthly charges significantly contribute to churn, especially among new customers.
+## 📁 Repository Contents
 
-✔️ Pricing optimization and loyalty strategies can reduce customer loss.
+```
+customer-churn-analysis-dashboard/
+│
+├── Customer_Churn_Dashboard.pbix   ← Power BI Dashboard file
+├── customer_churn.csv              ← Customer dataset (CSV format)
+├── Screenshot (102).png            ← Dashboard preview screenshot
+└── README.md                       ← Project documentation
+```
 
-🛠 Tools & Technologies
+---
 
-📊 Power BI
+## 🗂️ Dataset
 
-📂 Excel Dataset
+**File:** `customer_churn.csv`
 
-📈 Data Visualization
+The dataset contains **1,869 customer records** with the following key fields:
 
-📉 Business Intelligence Reporting
+| Column | Description |
+|---|---|
+| `customerID` | Unique customer identifier |
+| `tenure` | Number of months with the company |
+| `Contract` | Contract type (Month-to-month / One year / Two year) |
+| `MonthlyCharges` | Monthly billing amount |
+| `TotalCharges` | Total amount billed to date |
+| `Churn` | Whether the customer churned (Yes/No) |
+| `PaymentMethod` | How the customer pays |
+| `InternetService` | Type of internet service |
+| `TechSupport` | Whether tech support is subscribed |
+| `SeniorCitizen` | Whether customer is a senior citizen |
 
-💼 Business Impact
+---
 
-This dashboard helps organizations to:
+## 🖥️ Dashboard Preview
 
-Improve customer retention
+![Customer Churn Dashboard](Screenshot%20(102).png)
 
-Reduce revenue leakage
+> *Interactive Power BI dashboard showing churn rate by contract type, customer distribution, and KPI summary cards.*
 
-Optimize pricing models
+---
 
-Make strategic data-driven decisions
+## 📦 How to Use
 
-📁 Repository Contents
+### Option 1 — View in Power BI Desktop
 
-Customer_Churn_Dashboard.pbix – Power BI Dashboard
+1. **Download** the repository:
+   ```bash
+   git clone https://github.com/sohail189/customer-churn-analysis-dashboard.git
+   ```
 
-Dataset.xlsx – Customer Data
+2. **Open** `Customer_Churn_Dashboard.pbix` in **Power BI Desktop**
+   - Download Power BI Desktop free: [powerbi.microsoft.com](https://powerbi.microsoft.com/desktop)
 
-README.md – Project Documentation
+3. **Explore** the interactive dashboard — use slicers to filter by contract type, tenure, and charges
 
-👨‍💻 Author
+### Option 2 — Explore the Dataset
 
-Muhammad Sohail
-Data Scientist | Machine Learning Enthusiast | BI Developer
+Open `customer_churn.csv` in **Excel** or **Python/pandas**:
 
-📧 Email: sm7933294@gmail.com
+```python
+import pandas as pd
+
+df = pd.read_csv('customer_churn.csv')
+print(df.head())
+print(f"Churn Rate: {df['Churn'].value_counts(normalize=True)['Yes']:.1%}")
+print(f"Total Customers: {len(df)}")
+print(df.groupby('Contract')['Churn'].value_counts(normalize=True))
+```
+
+---
+
+## 💼 Business Impact
+
+| Business Goal | How This Dashboard Helps |
+|---|---|
+| 🔴 Reduce Churn | Identify high-risk segments before they leave |
+| 💰 Protect Revenue | Quantify revenue at risk from churning customers |
+| 🎯 Target Retention | Focus campaigns on month-to-month customers |
+| 📈 Improve Pricing | Understand how charges impact customer loyalty |
+| 📋 Strategic Planning | Data-driven decisions for contract and pricing strategy |
+
+---
+
+## 📊 Dashboard Sections
+
+### Section 1 — KPI Summary Cards
+Four headline metrics at a glance: Total Customers, Active Customers, Churned Customers, Monthly Churn
+
+### Section 2 — Churn by Contract Type
+Bar chart comparing churn rates across Month-to-Month, One Year, and Two Year contracts
+
+### Section 3 — Churn Distribution
+Donut chart showing the ratio of active vs churned customers
+
+### Section 4 — Tenure & Charges Analysis
+Visuals showing how tenure and monthly charges correlate with churn risk
+
+---
+
+## 🤝 Contributing
+
+Contributions and improvements are welcome!
+
+1. **Fork** the repository
+2. **Create** a new branch:
+   ```bash
+   git checkout -b feature/your-improvement
+   ```
+3. **Commit** your changes:
+   ```bash
+   git commit -m "Add: description of improvement"
+   ```
+4. **Push** and open a **Pull Request**
+
+### 💡 Ideas for Contribution
+- [ ] Add Python EDA notebook alongside the Power BI dashboard
+- [ ] Build a machine learning churn prediction model
+- [ ] Add Streamlit web app for real-time churn prediction
+- [ ] Add more advanced DAX measures
+- [ ] Extend dataset with more customer demographics
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — free to use, modify, and distribute with attribution.
+
+---
+
+## 📬 Contact
+
+**Muhammad Sohail**
+*Data Scientist | Machine Learning Enthusiast | BI Developer*
+
+[![GitHub](https://img.shields.io/badge/GitHub-sohail189-181717?style=flat-square&logo=github)](https://github.com/sohail189)
+[![Email](https://img.shields.io/badge/Email-sm7933294@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sm7933294@gmail.com)
+
+🔗 **Project Link:** [https://github.com/sohail189/customer-churn-analysis-dashboard](https://github.com/sohail189/customer-churn-analysis-dashboard)
+
+---
+
+<div align="center">
+
+Made with ❤️ using Power BI & Data Science
+
+⭐ **If this project helped you, please give it a star!** ⭐
+
+</div>
